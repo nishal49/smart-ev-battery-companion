@@ -1,0 +1,8 @@
+# CALCE data is citation-restricted and must not be redistributed here.
+data/
+
+# Parse cache and virtualenv are reproducible artefacts.
+cache/
+.venv/
+__pycache__/
+*.pyc

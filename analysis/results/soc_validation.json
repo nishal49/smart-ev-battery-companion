@@ -1,0 +1,494 @@
+{
+  "dataset": "CALCE INR18650-20R (SP2), University of Maryland",
+  "measured_capacity_ah": 2.028062744229916,
+  "model": {
+    "r0_ohm": 0.07170755327258055,
+    "r1_ohm": 0.06353006562799549,
+    "c1_farad": 1123.5414164387944,
+    "q_soc": 1e-10,
+    "q_vrc": 1e-06,
+    "r_volt": 0.0001
+  },
+  "impairments": {
+    "initial_soc_error_pp": 10.0,
+    "current_offset_a": 0.02,
+    "nameplate_capacity_ah": 2.0
+  },
+  "tuning_files": [
+    "11_05_2015_SP20-2_DST_50SOC",
+    "11_05_2015_SP20-2_DST_80SOC"
+  ],
+  "held_out_summary": {
+    "Voltage-only OCV lookup": {
+      "mae_pp": 12.746163340230568,
+      "rmse_pp": 16.212360453883225,
+      "max_pp": 73.88237495471165
+    },
+    "Coulomb counting (ideal init)": {
+      "mae_pp": 0.6958730140213147,
+      "rmse_pp": 0.8076243067690567,
+      "max_pp": 2.1472360923561538
+    },
+    "Coulomb counting": {
+      "mae_pp": 10.69490346689216,
+      "rmse_pp": 10.703271593164823,
+      "max_pp": 12.147236092355932
+    },
+    "OCV-corrected EKF (1st-order RC)": {
+      "mae_pp": 2.076547495561108,
+      "rmse_pp": 2.266594885694392,
+      "max_pp": 15.490617462879044
+    }
+  },
+  "ekf_held_out_mae_by_temperature_pp": {
+    "0C": 8.269455637917542,
+    "25C": 0.38321700663347436,
+    "45C": 0.963630819987574
+  },
+  "per_run": [
+    {
+      "file": "02_24_2016_SP20-2_0C_DST_50SOC",
+      "profile": "DST",
+      "temperature_c": 0.0,
+      "start_soc_pct": 55.5,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 20.140036406536478,
+          "rmse_pp": 22.510509025333953,
+          "max_pp": 53.624869231062725,
+          "bias_pp": -18.919033253282294,
+          "final_pp": -11.773177191502166
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.45332695755240204,
+          "rmse_pp": 0.5236603921413497,
+          "max_pp": 0.9201507309266138,
+          "bias_pp": 0.45332461001075847,
+          "final_pp": 0.8884690246057259
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.453324610011009,
+          "rmse_pp": 10.456610942677273,
+          "max_pp": 10.920150730926917,
+          "bias_pp": 10.453324610011009,
+          "final_pp": 10.888469024606028
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 10.771913176940899,
+          "rmse_pp": 10.96827820907816,
+          "max_pp": 15.490617462879044,
+          "bias_pp": -10.771913176940899,
+          "final_pp": -11.773177191502166
+        }
+      }
+    },
+    {
+      "file": "02_24_2016_SP20-2_0C_DST_80SOC",
+      "profile": "DST",
+      "temperature_c": 0.0,
+      "start_soc_pct": 82.2,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 19.00118629184446,
+          "rmse_pp": 22.751990578980266,
+          "max_pp": 73.88237495471165,
+          "bias_pp": -18.061511391850413,
+          "final_pp": -12.083614834819334
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.7490066105969797,
+          "rmse_pp": 0.8512804023892936,
+          "max_pp": 1.4717429043325376,
+          "bias_pp": 0.7490037598719896,
+          "final_pp": 1.4362554518246333
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.749003759872016,
+          "rmse_pp": 10.7566144079321,
+          "max_pp": 11.471742904332663,
+          "bias_pp": 10.749003759872016,
+          "final_pp": 11.436255451824758
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 5.766998098894183,
+          "rmse_pp": 5.866041156088996,
+          "max_pp": 10.576057012925148,
+          "bias_pp": -5.766998098894183,
+          "final_pp": -8.942710045525605
+        }
+      }
+    },
+    {
+      "file": "11_12_2015_SP20-2_BJDST_80SOC",
+      "profile": "BJDST",
+      "temperature_c": 25.0,
+      "start_soc_pct": 80.3,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 10.733513909925994,
+          "rmse_pp": 13.592059318927404,
+          "max_pp": 39.44271188248053,
+          "bias_pp": -10.699394640221382,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.98072515725309,
+          "rmse_pp": 1.1305061181403064,
+          "max_pp": 1.960389480765196,
+          "bias_pp": 0.98072515725309,
+          "final_pp": 0.6970184953201893
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.980725157253126,
+          "rmse_pp": 10.995114698274651,
+          "max_pp": 11.960389480765276,
+          "bias_pp": 10.980725157253126,
+          "final_pp": 10.697018495320266
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.2377009822985279,
+          "rmse_pp": 0.339991641873276,
+          "max_pp": 6.869176599559301,
+          "bias_pp": 0.18246416345130195,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "11_13_2015_SP20-2_BJDST_50SOC",
+      "profile": "BJDST",
+      "temperature_c": 25.0,
+      "start_soc_pct": 50.7,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.086715738229783,
+          "rmse_pp": 13.9163270975054,
+          "max_pp": 36.500243487208095,
+          "bias_pp": -11.028162062335383,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.5428271596085236,
+          "rmse_pp": 0.6248715968543581,
+          "max_pp": 1.0844101046754362,
+          "bias_pp": 0.5427320559891302,
+          "final_pp": 0.3765765466239497
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.542732055989271,
+          "rmse_pp": 10.547279537034226,
+          "max_pp": 11.0844101046756,
+          "bias_pp": 10.542732055989271,
+          "final_pp": 10.376576546624115
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.6094340726453743,
+          "rmse_pp": 0.9753908383576382,
+          "max_pp": 5.3808345739713435,
+          "bias_pp": -0.557925752965522,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "11_06_2015_SP20-2_FUDS_80SOC",
+      "profile": "FUDS",
+      "temperature_c": 25.0,
+      "start_soc_pct": 80.3,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.51164270886101,
+          "rmse_pp": 15.596204939331265,
+          "max_pp": 59.03213180897389,
+          "bias_pp": -10.0380663921529,
+          "final_pp": -1.371984472772847
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 1.0814927442590112,
+          "rmse_pp": 1.244299425861993,
+          "max_pp": 2.1472360923561538,
+          "bias_pp": 1.0814614578358108,
+          "final_pp": 2.1092484873697153
+        },
+        "Coulomb counting": {
+          "mae_pp": 11.081461457835669,
+          "rmse_pp": 11.098536399810266,
+          "max_pp": 12.147236092355932,
+          "bias_pp": 11.081461457835669,
+          "final_pp": 12.109248487369486
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.3275050620772182,
+          "rmse_pp": 0.4158337541157516,
+          "max_pp": 7.394876061398559,
+          "bias_pp": 0.16921844753369525,
+          "final_pp": 0.9915930728182205
+        }
+      }
+    },
+    {
+      "file": "11_09_2015_SP20-2_FUDS_50SOC",
+      "profile": "FUDS",
+      "temperature_c": 25.0,
+      "start_soc_pct": 50.7,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.298743759182534,
+          "rmse_pp": 14.861482304159601,
+          "max_pp": 48.510718924813744,
+          "bias_pp": -9.267181593882583,
+          "final_pp": -1.1676640616394396
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.5634230669366184,
+          "rmse_pp": 0.6581593959396788,
+          "max_pp": 1.2577552267370773,
+          "bias_pp": 0.5631589788868975,
+          "final_pp": 1.1870731501476008
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.56315897888686,
+          "rmse_pp": 10.56864955271963,
+          "max_pp": 11.257755226737029,
+          "bias_pp": 10.56315897888686,
+          "final_pp": 11.187073150147555
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.3276979395643992,
+          "rmse_pp": 0.45084305277719733,
+          "max_pp": 2.125215226888655,
+          "bias_pp": -0.15771893123053643,
+          "final_pp": 0.939754131533507
+        }
+      }
+    },
+    {
+      "file": "11_11_2015_SP20-2_US06_50SOC",
+      "profile": "US06",
+      "temperature_c": 25.0,
+      "start_soc_pct": 50.7,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 10.679771578364022,
+          "rmse_pp": 14.2870820190972,
+          "max_pp": 47.22947371438918,
+          "bias_pp": -10.284799927737307,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.5961944694241017,
+          "rmse_pp": 0.7124016091211482,
+          "max_pp": 1.2666840121732525,
+          "bias_pp": 0.5960252051083366,
+          "final_pp": 0.0
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.595836145211301,
+          "rmse_pp": 10.603030870497335,
+          "max_pp": 11.266684012173132,
+          "bias_pp": 10.595836145211301,
+          "final_pp": 9.79467123933878
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.5681941382981185,
+          "rmse_pp": 0.9480879938964922,
+          "max_pp": 5.4210886270661565,
+          "bias_pp": -0.4478253354165367,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "11_11_2015_SP20-2_US06_80SOC",
+      "profile": "US06",
+      "temperature_c": 25.0,
+      "start_soc_pct": 80.3,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 10.934546955488168,
+          "rmse_pp": 14.735479323001718,
+          "max_pp": 57.660038192968614,
+          "bias_pp": -10.638123858974486,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.7318978913406883,
+          "rmse_pp": 0.8628978834922397,
+          "max_pp": 1.511324218583639,
+          "bias_pp": 0.7318494310434938,
+          "final_pp": 0.5153580722678683
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.731849431043411,
+          "rmse_pp": 10.74158188435034,
+          "max_pp": 11.511324218583507,
+          "bias_pp": 10.731849431043411,
+          "final_pp": 10.515358072267734
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.22876984491720803,
+          "rmse_pp": 0.33324367908853825,
+          "max_pp": 6.854659504168037,
+          "bias_pp": 0.2026301146975316,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "12_11_2015_SP20-2_45C_DST_50SOC",
+      "profile": "DST",
+      "temperature_c": 45.0,
+      "start_soc_pct": 50.7,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.753846237081056,
+          "rmse_pp": 15.364595904324108,
+          "max_pp": 48.86362422472345,
+          "bias_pp": -9.838758835961722,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.5611946111589002,
+          "rmse_pp": 0.6537905883181867,
+          "max_pp": 1.1581697950527077,
+          "bias_pp": 0.5611903235256018,
+          "final_pp": 0.0
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.56063613114146,
+          "rmse_pp": 10.565999990136357,
+          "max_pp": 11.15816979505247,
+          "bias_pp": 10.56063613114146,
+          "final_pp": 9.517596581767187
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 1.0217972209460442,
+          "rmse_pp": 1.4024865022776312,
+          "max_pp": 9.311332750903063,
+          "bias_pp": -1.0128815576730856,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "12_11_2015_SP20-2_45C_DST_80SOC",
+      "profile": "DST",
+      "temperature_c": 45.0,
+      "start_soc_pct": 80.3,
+      "set": "held_out",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 10.321629816792164,
+          "rmse_pp": 14.507874028171335,
+          "max_pp": 59.795299151924276,
+          "bias_pp": -8.937501301020829,
+          "final_pp": 0.0
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.6986414720828336,
+          "rmse_pp": 0.8143756554320121,
+          "max_pp": 1.448054682345007,
+          "bias_pp": 0.6986392300013157,
+          "final_pp": 0.0
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.69030694167748,
+          "rmse_pp": 10.699297648216051,
+          "max_pp": 11.448054682345154,
+          "bias_pp": 10.69030694167748,
+          "final_pp": 8.990860233101222
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.9054644190291039,
+          "rmse_pp": 0.9657520293902386,
+          "max_pp": 7.436181071488567,
+          "bias_pp": 0.9054644190291039,
+          "final_pp": 0.0
+        }
+      }
+    },
+    {
+      "file": "11_05_2015_SP20-2_DST_50SOC",
+      "profile": "DST",
+      "temperature_c": 25.0,
+      "start_soc_pct": 50.7,
+      "set": "tuning",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.376671390345054,
+          "rmse_pp": 14.305520276876207,
+          "max_pp": 48.432520817763944,
+          "bias_pp": -10.061361938584104,
+          "final_pp": -1.2529827078958056
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.4570861742228133,
+          "rmse_pp": 0.533411921406098,
+          "max_pp": 0.9745318377256666,
+          "bias_pp": 0.4570789227568758,
+          "final_pp": 0.9494730113067059
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.457078922756994,
+          "rmse_pp": 10.460693415497756,
+          "max_pp": 10.974531837725868,
+          "bias_pp": 10.457078922756994,
+          "final_pp": 10.949473011306903
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.37292019311069186,
+          "rmse_pp": 0.4879156644810617,
+          "max_pp": 1.8333117211421113,
+          "bias_pp": -0.038873964793854084,
+          "final_pp": 0.9375737062987659
+        }
+      }
+    },
+    {
+      "file": "11_05_2015_SP20-2_DST_80SOC",
+      "profile": "DST",
+      "temperature_c": 25.0,
+      "start_soc_pct": 80.3,
+      "set": "tuning",
+      "metrics": {
+        "Voltage-only OCV lookup": {
+          "mae_pp": 11.80380812804217,
+          "rmse_pp": 15.53811729406526,
+          "max_pp": 59.20053828681622,
+          "bias_pp": -10.814648748009715,
+          "final_pp": -1.5622500854015064
+        },
+        "Coulomb counting (ideal init)": {
+          "mae_pp": 0.8690414039808941,
+          "rmse_pp": 1.001959804876547,
+          "max_pp": 1.7420000476487638,
+          "bias_pp": 0.8690382808629531,
+          "final_pp": 1.7126082098238764
+        },
+        "Coulomb counting": {
+          "mae_pp": 10.869038280862947,
+          "rmse_pp": 10.880472832917105,
+          "max_pp": 11.74200004764886,
+          "bias_pp": 10.869038280862947,
+          "final_pp": 11.712608209823964
+        },
+        "OCV-corrected EKF (1st-order RC)": {
+          "mae_pp": 0.36576526189282643,
+          "rmse_pp": 0.46240638659808203,
+          "max_pp": 7.386810658260201,
+          "bias_pp": -0.2934096693626376,
+          "final_pp": 0.6363209375210725
+        }
+      }
+    }
+  ]
+}

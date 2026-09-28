@@ -1,0 +1,43 @@
+# --- Secrets (never commit real credentials) ---
+cores3_firmware/include/ev_secrets.h
+
+# --- Build artifacts ---
+cores3_firmware/.pio/
+**/.pio/
+*.o
+*.elf
+*.bin
+
+# --- Python venvs / caches ---
+.ttsvenv/
+.venv/
+analysis/.venv/
+__pycache__/
+*.pyc
+
+# --- Analysis data + outputs (datasets are not redistributable; large) ---
+analysis/data/
+analysis/cache/
+analysis/results/*.png
+
+# --- Editor / OS ---
+.vscode/
+.DS_Store
+.history/
+**/.history/
+.~lock.*#
+
+# --- Submission / internal docs kept private (not published) ---
+docs/
+hardware/sensing-design.md
+hardware/digikey-bom.md
+hardware/kicad-schematic-guide.md
+
+# --- KiCad backups / locks / stray files ---
+*-backups/
+*.kicad_sch-bak
+fp-info-cache
+*.lck
+~*.lck
+hardware/ev_sensing/.kicad_sch
+hardware/ev_sensing/.kicad_sch.kicad_sch
